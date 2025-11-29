@@ -1,6 +1,7 @@
 # Bowling2
 
 A simple bowling game made with Unity.
+[click here to play on itch](https://gamedevteamx.itch.io/sagitweek4)
 
 ## How to Run
 
