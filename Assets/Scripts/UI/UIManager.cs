@@ -1,8 +1,8 @@
 // ==================== UIManager.cs ====================
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-[DefaultExecutionOrder(-100)]    // йеега щ-UIManager темд шащеп
+[DefaultExecutionOrder(-100)] // пїЅпїЅпїЅпїЅпїЅ пїЅ-UIManager пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;

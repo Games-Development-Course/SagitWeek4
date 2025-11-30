@@ -23,8 +23,7 @@ public class LevelManager : MonoBehaviour
         if (currentBottleSet != null)
             Destroy(currentBottleSet);
 
-        GameObject prefab =
-            (currentLevel == 1) ? level1Prefab : level2Prefab;
+        GameObject prefab = (currentLevel == 1) ? level1Prefab : level2Prefab;
 
         currentBottleSet = Instantiate(
             prefab,

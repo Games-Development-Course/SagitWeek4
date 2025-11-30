@@ -24,8 +24,9 @@ public class GameManager : MonoBehaviour
     public void StartLevel()
     {
         levelManager.LoadLevel();
-        UIManager.Instance.ShowMessage("Aim with the mouse.\nHold SPACE to charge power.\nRelease to roll the ball!");
-
+        UIManager.Instance.ShowMessage(
+            "Aim with the mouse.\nHold SPACE to charge power.\nRelease to roll the ball!"
+        );
 
         GameObject b = lane.SpawnBall();
         ball = b.GetComponent<BallController>();
@@ -43,7 +44,8 @@ public class GameManager : MonoBehaviour
     // ================= UPDATE ======================
     void Update()
     {
-        if (!ballLaunched) return;
+        if (!ballLaunched)
+            return;
 
         if (ball.ShouldForceStop())
         {
@@ -57,7 +59,7 @@ public class GameManager : MonoBehaviour
         ballLaunched = false;
 
         int fallen = levelManager.bottleManager.CountFallen();
-        UIManager.Instance.SetScore(fallen);  
+        UIManager.Instance.SetScore(fallen);
         levelManager.bottleManager.RemoveFallen();
 
         bool cleared = levelManager.bottleManager.AllCleared();

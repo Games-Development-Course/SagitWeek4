@@ -28,7 +28,8 @@ public class BowlingLane : MonoBehaviour
 
     public void ResetBall()
     {
-        if (currentBall == null) return;
+        if (currentBall == null)
+            return;
 
         BallController bc = currentBall.GetComponent<BallController>();
         bc.PrepareForIdle();

@@ -9,7 +9,7 @@ public class BallController : MonoBehaviour
     public float chargeSpeed = 20f;
 
     [Header("Auto Stop Settings")]
-    public float stopAfterSeconds = 8f;   // זמן עד שהכדור נעצר בכוח
+    public float stopAfterSeconds = 8f; // זמן עד שהכדור נעצר בכוח
 
     private float currentForce;
     private bool isCharging = false;
@@ -46,7 +46,8 @@ public class BallController : MonoBehaviour
         }
 
         // לפני הזריקה – רק כשהוא קינמטי
-        if (!rb.isKinematic) return;
+        if (!rb.isKinematic)
+            return;
 
         UpdateAiming();
         UpdateCharging();

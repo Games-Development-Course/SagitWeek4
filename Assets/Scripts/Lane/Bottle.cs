@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Bottle : MonoBehaviour
 {
-    private const float FALL_ANGLE = 10f;     // tilt more than 10° = fallen
-    private const float FALL_Y = -0.05f;      // below 0 by a bit = fallen
+    private const float FALL_ANGLE = 10f; // tilt more than 10ï¿½ = fallen
+    private const float FALL_Y = -0.05f; // below 0 by a bit = fallen
 
     public bool IsFallen()
     {
